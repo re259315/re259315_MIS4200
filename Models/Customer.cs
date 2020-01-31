@@ -11,7 +11,9 @@ namespace re259315_MIS4200.Models
         public string customerFirstName { get; set; }
         public string customerLastName { get; set; }
         public string email { get; set; }
-        public int phone { get; set; }
+        public string phone { get; set; }
         public DateTime customerSince { get; set; }
+
+        public ICollection<Order> Order { get; set; }
     }
 }
